@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply h-full;
+}
+
+body {
+    @apply h-full;
+}
+
+div#root {
+    @apply h-full;
+    max-width: none;
+    padding: 0;
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+    h4 {
+        @apply text-base;
+    }
+
+    p {
+        @apply mb-4;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
